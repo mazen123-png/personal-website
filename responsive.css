@@ -1,0 +1,133 @@
+/* responsive website */
+
+@media (max-width:1023px) {
+    .container1{
+        justify-content: space-around;
+    }
+    #main{
+        margin-left: 0;
+    }
+    header{
+        background-color: #0c192ca2;
+    }
+    .fa-list,.fa-circle-xmark{
+        display: block;
+        font-size: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .fa-circle-xmark{
+        border-radius: 50%;
+        background-color: #0065fd;
+        color:#0a3450;
+        border: none;
+        outline: none;
+    }
+    header .container1 nav ul{
+        flex-direction: column;
+        transition: all .5s ease-in-out;
+        margin-top: 60px;
+        align-items: center;
+        position: absolute;
+        margin-left: -20%;
+        background-color: #0c192ca2;
+    }
+    header .container1 nav ul li{
+        border-bottom: 2px solid rgba(0, 255, 234, 0.918);
+    }
+    .mainSection{
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainSection h1,.mainSection h2{
+        display: none;
+    }
+    .HireSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .containHire,.Hire{
+        position: static;
+    }
+    
+    .socialIcons{
+        padding-right: 10em;
+    }
+    
+    .mainSection .socialIcons a{
+        position: static;
+        margin-bottom: 10px;
+    }
+    .mainImage{
+        position: static;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .mainSection h2,.mainSection h1{
+        font-weight: 700;
+        transform: none;
+    }
+    .mainSection h2{
+        color: red;
+        -webkit-text-stroke: .4 #0065fd;
+        font-size: 30px;
+    }
+    .Hire{
+        width: 200px;
+        text-align: center;
+    }
+    
+    .about{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactSection .inputs div input,
+    .contactSection .inputs div textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    }
+    .card{
+        text-align: center;
+        height: 400px;
+    }
+}
+@media (max-width:510px) {
+    .containCards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 80%;
+    }
+    .card button{
+        margin-top: 20px;
+    }
+    .containCards .card div{
+        margin-top: 20px;
+    }
+    .container1{
+        justify-content: left;
+    }
+    .mainSection{
+        padding: 0;
+    }
+    .socialIcons{
+        padding-right: 5em;
+        padding-left: 50px;
+    }
+    header .container1 nav ul{
+        margin-left: 0;
+    }
+    .fa-list,.fa-circle-xmark{
+        margin-left: 150px;
+    }
+    #main h1 a{
+        margin-left: 30px;
+    }
+}

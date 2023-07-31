@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my personal website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <div class="containall">
+    <header>
+        <div class="container1">
+            <div id="main">
+                <h1><a href="#">portfolio</a></h1>
+            </div>
+            <nav class="navbar">
+                <ul style="display: none;" id="nav-link" class="navbar-nav ml-auto">
+                    <li class="nav-item"><a  href="#home">home</a></li>
+                    <li class="nav-item"><a  href="#about">about</a></li>
+                    <li class="nav-item"><a  href="skills.html">skills</a></li>
+                    <li class="nav-item"><a  href="#projects">projects</a></li>
+                    <li class="nav-item"><a class="contact" href="#contact">contact</a></li>
+                </ul>
+                <div>
+                    <i id="toggle-icon" class="fa-solid fa-list"></i>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <br>
+    <section class="mainSection" id="home">
+        <div class="socialIcons">
+            <div>
+                <a href="#" id="link1"><i  class="bx bxl-facebook"></i></a>
+            </div>
+            <div>
+                <a href="#" id="link2"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <div>
+                <a href="#" id="link3"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+        <h1>Hi ,I'm Mazen</h1>
+        <h2>Frontend Developer</h2>
+        
+            
+        <div class="HireSection">
+            <img class="mainImage" src="343300293_623145489673445_3365960786926743639_n.jpg" alt="mazenImage">
+            <div class="containHire">
+                <a href="https://wa.me/0201148824619" target="_blank" class="Hire">Hire me</a>
+        
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div>
+            <div class="about-text">
+                <h1>about <span>me</span></h1>
+            </div>
+            <div class="contain-image">
+                <img class="about-image" src="343300293_623145489673445_3365960786926743639_n.jpg" alt="mazenImage">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="mywork">
+                <h1>
+                    Frontend Developer!
+                </h1>
+            </div>
+            <div class="about-me">
+                <p>I am a <a href="">Frontend developer.</a> I have spent two years immersed in learning and honing my skills. I make site interface with Html CSS javaScript language , Bootstrap , React.  I Have a lot of Experience in <a href="">designing</a> with Photoshop and Illustrator and a lot of athor programs. I have made a lot of vedios with <a href="">motion graphic </a>and a little with motion graphic and voice over. also I can work as a <a href="">vedio editor</a> </p>
+            </div>
+            <div class="read">
+                <a href="#"><button>Read More</button></a>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="my-projects" >
+        <div id="projects"></div>
+        <div class="header">
+            <h1>my <span>projects</span></h1>
+        </div>
+        <div class="containCards">
+            
+            <div class="card">
+                <h1><a href="#\">first project</a></h1>
+                <div>
+                    <p>
+                        this is crud project with html,css,javascript to master your items
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a href="ce">more details</a></button>
+            </div>
+            <div class="card">
+                <h1><a href="#\">second project</a></h1>
+                <div>
+                    <p class="second-paragraph">
+                        this is crud project with html,css,javascript
+                        to master your salleries
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a href="cr">more details</a></button>
+            </div>
+            <div class="card">
+                <h1><a href="#\">third project</a></h1>
+                <div>
+                    <p class="second-paragraph">
+                        this is a website to start bootstrap course with html,css,javaScript
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a href="cr">more details</a></button>
+            </div>
+            <div class="card">
+                <h1><a href="#\">fourth project</a></h1>
+                <div>
+                    <p class="second-paragraph">
+                        this is a calculator with python
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a href="cr">more details</a></button>
+            </div>
+            
+        </div>
+        <div class="containmoreProjectsLink">
+            <a class="moreProjectsLink" href="cr">more projects</a>
+        </div>
+        
+    </section>
+    <section class="contactSection" id="contact">
+        <div>
+            <div>
+                <h1>contact me</h1>
+            </div>
+            <div>
+                <form action="">
+                <div class="inputs">
+                    <div>
+                        <input type="text" name="name: " id="name" title="please, enter your name" required>
+                        <label for="name" id="nameLabel" title="please, enter your name">name</label>
+                    </div>
+                    <div>
+                        <input type="email" name="email: " id="email" title="please, enter your email" required>
+                        <label for="email" id="emailLabel" title="please, enter your email">email</label>
+                    </div>
+                    <div>
+                        <textarea type="text" name="message: " id="message" required title="please, enter your message"></textarea>
+                        <label for="message" id="messageLabel" title="please, enter your message">your message</label>
+                    </div>
+                    
+                </div>
+            
+                <div class="sendButton">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <div>
+        <div>
+            <i id="chatLink" class="fa-solid fa-comment-dots"></i>
+            <ul  id="contactLinks">
+                <a href=""><i id="whatsappLink" style="display: none;" class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i id="messengerLink" style="display: none;" class="fa-brands fa-facebook-messenger"></i></a>
+                <a href=""><i id="telegramLink" style="display: none;" class="fa-brands fa-telegram"></i></a>
+            </ul>
+        </div>
+        <div id="containGoback" style="display: none;">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
