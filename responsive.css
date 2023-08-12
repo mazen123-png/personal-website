@@ -98,7 +98,7 @@
     .containText{
         display: block;
         position: fixed;
-        bottom: 50px;
+        bottom: 100px;
         left: 30%;
         width: 40%;
     }
@@ -107,6 +107,10 @@
         color: #00abf9;
         font-weight: 700;
         position: absolute;
+    }
+    .socialIcons,.mainSection h1,.mainSection  h2,.containHire {
+        position: relative;
+        z-index: 999;
     }
     
 }

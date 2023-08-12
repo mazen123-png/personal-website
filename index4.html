@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #textContainer {
+    font-size: 24px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    animation: changeOpacity infinite ease-in-out;
+  }
+  @keyframes changeOpacity {
+    0%{
+        opacity: 0;
+    }50%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+    }
+  }
+</style>
+<title>اله الكاتبة</title>
+</head>
+<body>
+<div id="containText">
+    <span id="textContainer">Mazen Mahmoud</span>
+    <div id="textChanger"></div>
+</div>
+
+<script>
+  const textContainer = document.getElementById('textContainer');
+  let containText = document.getElementById('containText')
+  let textChanger = document.getElementById('textChanger')
+  let isDeleting = false;
+  textChanger.innerHTML = '|'
+  const phrases = [
+    "Mazen Mahmoud",
+    "Front end developer",
+    "Graphic Designer"
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  function typeWriter() {
+    const currentPhrase = phrases[phraseIndex];
+    const currentText = currentPhrase.slice(0, charIndex);
+
+    textContainer.textContent = currentText + textChanger.innerHTML;
+    
+    if (!isDeleting) {
+      charIndex++;
+      if (charIndex > currentPhrase.length) {
+        isDeleting = true;
+        charIndex = currentPhrase.length;
+        setTimeout(typeWriter, 1000);
+      } else {
+        setTimeout(typeWriter, 150);
+      }
+    } else {
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }
+      setTimeout(typeWriter, 50);
+    }
+  }
+
+  typeWriter();
+</script>
+</body>
+</html>
