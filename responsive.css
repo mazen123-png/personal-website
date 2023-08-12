@@ -95,6 +95,20 @@
         text-align: center;
         height: 400px;
     }
+    .containText{
+        display: block;
+        position: fixed;
+        bottom: 50px;
+        left: 30%;
+        width: 40%;
+    }
+    .textContainer{
+        font-size: 30px;
+        color: #00abf9;
+        font-weight: 700;
+        position: absolute;
+    }
+    
 }
 @media (max-width:510px) {
     .containCards{

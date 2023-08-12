@@ -81,3 +81,42 @@ goUp.onclick = () =>{
         top:0
     })
 }
+
+
+
+const textContainer = document.getElementById('textContainer');
+let containText = document.getElementById('containText')
+let isDeleting = false;
+const phrases = [
+"Mazen Mahmoud",
+"Front end developer",
+"Graphic Designer"
+];
+let phraseIndex = 0;
+let charIndex = 0;
+function typeWriter() {
+const currentPhrase = phrases[phraseIndex];
+const currentText = currentPhrase.slice(0, charIndex);
+
+textContainer.textContent = currentText + '|';
+
+if (!isDeleting) {
+    charIndex++;
+    if (charIndex > currentPhrase.length) {
+    isDeleting = true;
+    charIndex = currentPhrase.length;
+    setTimeout(typeWriter, 1000);
+    } else {
+    setTimeout(typeWriter, 150);
+    }
+} else {
+    charIndex--;
+    if (charIndex === 0) {
+    isDeleting = false;
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+    setTimeout(typeWriter, 50);
+}
+}
+
+typeWriter();
