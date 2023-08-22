@@ -1,24 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="./style.css">
+    <title>my personal website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="settings.css">
 </head>
+
 <body>
+    <div id="preloader">
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="./particles.js"></script>
-<script src="./app.js"></script>
-
-
-
-
+    </div>
+    <div class="containall" id="containAll">
+    <header id="header">
+        <div class="container1" >
+            <div id="main">
+                <h1><a href="#">portfolio</a></h1>
+            </div>
+            <nav class="navbar">
+                <ul style="display: none;" id="nav-link" class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="item"  href="#home">home</a></li>
+                    <li class="nav-item"><a class="item"  href="#about">about</a></li>
+                    <li class="nav-item"><a class="item"  href="skills.html">skills</a></li>
+                    <li class="nav-item"><a class="item"  href="./My Projects/index.html">projects</a></li>
+                    <li class="nav-item"><a class="contact item" href="#contact">contact</a></li>
+                    <li id="setting-btn" class="settings item">settings<i class="fa-solid fa-gear"></i></li>
+                </ul>
+                <div>
+                    <i id="toggle-icon" class="fa-solid fa-list"></i>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <br>
+    <section class="mainSection allElements" id="home">
+        <div class="socialIcons">
+            <div>
+                <a href="#" id="link1"><i  class="bx bxl-facebook"></i></a>
+            </div>
+            <div>
+                <a href="#" id="link2"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <div>
+                <a href="#" id="link3"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+        <h1>Hi ,I'm Mazen</h1>
+        <h2 id="fornt-end">Frontend Developer</h2>
+        
+            
+        <div class="HireSection">
+            <img class="mainImage" src="343300293_623145489673445_3365960786926743639_n.jpg" alt="mazenImage">
+            <div class="containHire">
+                <a href="https://wa.me/0201148824619" target="_blank" class="Hire">Hire me</a>
+        
+            </div>
+        </div>
+    </section>
+    <section class="about allElements" id="about">
+        <div>
+            <div class="about-text">
+                <h1>about <span>me</span></h1>
+            </div>
+            <div class="contain-image">
+                <img class="about-image" src="343300293_623145489673445_3365960786926743639_n.jpg" alt="mazenImage">
+                <span id="circle-spin" class="circle-spin"></span>
+            </div>
+            <div class="mywork">
+                <h1>
+                    Frontend Developer!
+                </h1>
+            </div>
+            <div class="about-me">
+                <p id="about-me">I am a <a class="link" href="">Frontend developer.</a> I have spent two years immersed in learning and honing my skills. I make site interface with Html CSS javaScript language , Bootstrap , React.  I Have a lot of Experience in <a class="link" href="">designing</a> with Photoshop and Illustrator and a lot of athor programs. I have made a lot of vedios with <a class="link" href="">motion graphic </a>and a little with motion graphic and voice over. also I can work as a <a class="link" href="">vedio editor</a> </p>
+            </div>
+            <div class="read">
+                <a href="#"><button>Read More</button></a>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="my-projects allElements" >
+        <div id="projects"></div>
+        <div class="header">
+            <h1>my <span>projects</span></h1>
+        </div>
+        <div class="containCards">
+            
+            <div class="card"  data-aos="zoom-in"  data-aos-duration="500">
+                <h1><a class="orangeColor" href="#\">first project</a></h1>
+                <div>
+                    <p class="orangeColor">
+                        this is crud project with html,css,javascript to master your items
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a class="orangeColor" href="ce">more details</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <h1><a href="#\" class="orangeColor">second project</a></h1>
+                <div>
+                    <p class="second-paragraph orangeColor">
+                        this is crud project with html,css,javascript
+                        to master your salleries
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a class="orangeColor" href="cr">more details</a></button>
+            </div>
+            <div class="card " data-aos="zoom-out"> 
+                <h1><a href="#\" class="orangeColor">third project</a></h1>
+                <div>
+                    <p class="second-paragraph orangeColor">
+                        this is a website to start bootstrap course with html,css,javaScript
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a class="orangeColor" href="cr">more details</a></button>
+            </div>
+            <div class="card" data-aos="zoom-out" data-aos-duration="500">
+                <h1><a href="#\" class="orangeColor">fourth project</a></h1>
+                <div>
+                    <p class="second-paragraph orangeColor">
+                        this is a calculator with python
+                    </p>
+                </div>
+                <button class="btn btn-primary"><a href="cr" class="orangeColor">more details</a></button>
+            </div>
+            
+        </div>
+        <div class="containmoreProjectsLink">
+            <a class="moreProjectsLink" href="cr">more projects</a>
+        </div>
+        
+    </section>
+    <section class="contactSection allElements">
+        <div>
+            
+            <div class="contactForm allElements" >
+                <div>
+                    <h2>Mazen Mahmoud</h2>
+                    <h3>Front End Developer</h3>
+                    <img src="./coder.png"  alt="">
+                </div>
+                <form id="form" action="">
+                    <div>
+                        <h1>contact me</h1>
+                    </div>
+                <div class="inputs">
+                    <div>
+                        <input type="text" name="name: " id="name" title="please, enter your name" required>
+                        <label for="name" class="label" id="nameLabel" title="please, enter your name">name</label>
+                    </div>
+                    <div>
+                        <input type="email" name="email: " id="email" title="please, enter your email" required>
+                        <label for="email" class="label" id="emailLabel" title="please, enter your email">email</label>
+                    </div>
+                    <div>
+                        <textarea type="text" name="message: " id="message" required title="please, enter your message"></textarea>
+                        <label for="message" class="label" id="messageLabel" title="please, enter your message">your message</label>
+                    </div>
+                    
+                </div>
+            
+                <div class="sendButton">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    
+    <div>
+        <div>
+            <i id="chatLink" class="fa-solid fa-comment-dots"></i>
+            <ul  id="contactLinks">
+                <a href=""><i id="whatsappLink" style="display: none;" class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i id="messengerLink" style="display: none;" class="fa-brands fa-facebook-messenger"></i></a>
+                <a href=""><i id="telegramLink" style="display: none;" class="fa-brands fa-telegram"></i></a>
+            </ul>
+        </div>
+        <div id="containGoback" style="display: none;">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </div>
+        <div class="containText">
+            <span id="textContainer" class="textContainer">Mazen Mahmoud</span>
+        </div>
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+    </div>
+    </div>
+    <section id="settingSection" class="none">
+        <div>
+            <div class="settingsSection">
+                <h2><span>Settings </span> <i class="fa-solid fa-gear"></i></h2>
+                <div>
+                    <h3>Change Language:</h3>
+                    <select class="changeLanguage" name="change language" id="">
+                        <option value="Language" disabled>Language</option>
+                        <option class="Englishoption" value="English">English</option>
+                        <option class="ArabicOption" value="Arabic">Arabic</option>
+                    </select>
+                </div>
+                <div class="changeMode">
+                    <h3>Change Mode:</h3>
+                    <div class="containMode" value="">
+                        <i id="fa-sun" class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="containMode2" value="">
+                        <i id="fa-moon" class="fa-solid fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- scripts -->
+    <script src="./particles.js"></script>
+        <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000
+      });
+    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
