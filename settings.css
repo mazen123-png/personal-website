@@ -1,0 +1,68 @@
+.settingsSection{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.settingsSection h2{
+    display: flex;
+    align-items: center;
+    color: #00abf0;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.settingsSection h2 > span{
+    margin-right: 5px;
+}
+.settingsSection>div{
+    display: flex;
+    color: #00abf0;
+    font-size: 18px;
+}
+.changeLanguage{
+    background-color:#0a3450 ;
+    color: #00abf0;
+    border: 1px solid #194f74;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.changeMode{
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.containMode{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.containMode2,.containMode{
+    font-size: 32px;
+}
+.containMode i:hover,.containMode2 i:hover{
+    transition: .5s all;
+    color: #194f74;
+    cursor: pointer;
+}
+.lightMood1{
+    background-color: #ff7f00 !important;
+}
+.lightMood2{
+    background-color: #4ff4a2 !important;
+}
+.lightMoodColor1{
+    color: #ff7f00 !important;
+}
+.lightMoodColor2{
+    color: #00ffd5 !important;
+    transition: .5s all;
+}
+
+.lightMoodColor2:hover{
+    text-shadow: none;
+    color: #0bc07a !important;
+}
+.none{
+    display: none;
+}

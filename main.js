@@ -120,3 +120,113 @@ if (!isDeleting) {
 }
 
 typeWriter();
+
+
+let loader = document.getElementById('preloader')
+setTimeout(() =>{
+    loader.style.display = 'none'
+},1000)
+
+// change mood of the page
+let setting_btn = document.getElementById('setting-btn')
+let settingSection = document.getElementById('settingSection')
+let containAllElements = document.getElementById('containAll')
+let lightMood = document.getElementById('fa-sun')
+let darkMood = document.getElementById('fa-moon')
+let elements = document.getElementsByClassName('allElements')
+let element1 = document.getElementsByClassName('contactForm')
+let linksItem = document.getElementsByClassName('item')
+let labels = document.getElementsByClassName('label')
+let form = document.getElementById('form')
+let cards = document.getElementsByClassName('card')
+let elementwithorangeColor = document.getElementsByClassName('orangeColor')
+let btns = document.getElementsByClassName('btn-primary')
+let circle_spin = document.getElementById('circle-spin')
+let about_me = document.getElementById('about-me')
+let aboutLinks = document.getElementsByClassName('link')
+let forntEnd = document.getElementById('fornt-end')
+let header = document.getElementById('header');
+setting_btn.onclick = ()=>{
+    containAllElements.classList.add('none')
+    settingSection.classList.remove('none')
+}
+
+lightMood.onclick = ()=>{
+    alert('are you sure')
+    containAllElements.classList.remove('none')
+    settingSection.classList.add('none')
+    document.body.classList.add('lightMood1')
+    element1[0].classList.add('lightMood2')
+    form.style.backgroundColor = '#ff7f00'
+    header.style.backgroundColor = '#ff6800'
+    circle_spin.style.cssText = `
+        border-top: .2rem solid #4ff4a2;
+        border-bottom: .2rem solid #4ff4a2;
+    `
+    forntEnd.style.color = 'red'
+    about_me.style.color = '#222'
+    for(let i = 0;i<aboutLinks.length;i++){
+        aboutLinks[i].classList.add('lightMoodColor1')
+    }
+    for(let i =0;i<elements.length;i++){
+        if(i % 2==0){
+            elements[i].classList.add('lightMood1')
+        }else{
+            elements[i].classList.add('lightMood2')
+        }   
+    }
+    for(let i = 0;i < btns.length;i++){
+        btns[i].classList.add('lightMood2')
+    }
+    for(let i = 0;i<elementwithorangeColor.length;i++){
+        elementwithorangeColor[i].classList.add('lightMoodColor1')
+    }
+    for(let i = 0;i< linksItem.length;i++){
+        linksItem[i].classList.add('lightMoodColor2')
+    }
+    for(let i = 0;i< cards.length;i++){
+        cards[i].classList.add('lightMood2')
+    }
+    for(let i = 0;i< linksItem.length;i++){
+        labels[i].classList.add('lightMoodColor2')
+    }
+    
+}
+darkMood.onclick = ()=>{
+    alert('are you sure')
+    containAllElements.classList.remove('none')
+    settingSection.classList.add('none')
+    document.body.classList.remove('lightMood1')
+    element1[0].classList.remove('lightMood2')
+    form.style.backgroundColor = '#112e42'
+    header.style.backgroundColor = '#0c192c'
+    circle_spin.style.cssText = `
+        border-top: .2rem solid #112e42;
+        border-bottom: .2rem solid #112e42;
+    `
+    forntEnd.style.color = 'transparent'
+    about_me.style.color = '#00abf0'
+    for(let i = 0;i<aboutLinks.length;i++){
+        aboutLinks[i].classList.remove('lightMoodColor1')
+    }
+    for(let i =0;i<elements.length;i++){
+        elements[i].classList.remove('lightMood1')
+        elements[i].classList.remove('lightMood2')
+          
+    }
+    for(let i = 0;i < btns.length;i++){
+        btns[i].classList.remove('lightMood2')
+    }
+    for(let i = 0;i<elementwithorangeColor.length;i++){
+        elementwithorangeColor[i].classList.remove('lightMoodColor1')
+    }
+    for(let i = 0;i< linksItem.length;i++){
+        linksItem[i].classList.remove('lightMoodColor2')
+    }
+    for(let i = 0;i< cards.length;i++){
+        cards[i].classList.remove('lightMood2')
+    }
+    for(let i = 0;i< linksItem.length;i++){
+        labels[i].classList.remove('lightMoodColor2')
+    }
+}

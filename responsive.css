@@ -91,6 +91,12 @@
     min-width: 100%;
     max-width: 100%;
     }
+    .contactForm{
+        flex-direction: column;
+    }
+    .contactForm form{
+        width: 80%;
+    }
     .card{
         text-align: center;
         height: 400px;
